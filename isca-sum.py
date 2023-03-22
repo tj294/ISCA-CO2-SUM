@@ -23,3 +23,4 @@ print("Total energy usage {:2.3e} J".format(total_joules))
 total_kwh = total_joules * 2.778e-7
 total_co2 = total_kwh * 0.19338 #based on UK grid June 2022
 print("Total CO2 usage: {:.3f} kg".format(total_co2))
+print("With cost of cooling (2x): {:.3f} kg".format(2 * total_co2))
